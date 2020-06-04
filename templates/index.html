@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+
+<head>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12" id="resHead">
+        <h3>The Resume Of</h3>
+        <h1>Juan Ivan Nuñez Baeza</h1>
+        <img width=100px class="img-responsive" src="{{url_for('static', filename='logom.png')}}" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6" id="workExp">
+        <h1 class="heading">About me</h1>
+        <p>
+          Hey there, my name is Ivan and I'm a data analyst with background on automotive engineering, formed at the IPN
+          and Ironhack,
+          where I've been developing different scripts related to the correct treatment of big amounts of data to get
+          the best insights as possible
+          and bring desitions closer to reality or what could be. Personally, I´m very interested in data science,
+          machine learning,
+          and computer vision, because by implementing its different models or techniques in different areas would help
+          us to detect certain needs
+          and then satisfy it efficiently with few resources, saving time, giving accuracy, or less error.
+        </p>
+
+        <h1 class="heading">Work Experience</h1>
+        <h2 class="title">Company</h2>
+        <h3 class="subtitle">Position</h3>
+        <h4 class="date">From: MM-YYYY - To: MM-YYYY/h4>
+          <p>
+            Responsibilities
+          </p>
+
+      </div>
+      <div class="col-xs-12 col-md-6" id="skillEdu">
+        <h1 class="heading">Skillset</h1>
+
+        <h2 class="title">Type</h2>
+        <p>
+          Detailed description!
+        </p>
+        <h1 class="heading">Education</h1>
+        <h2 class="title">Name of school</h2>
+        <h3 class="subtitle">Type of education!</h3>
+
+      </div>
+      <div class="col-xs-12 col-md-6" id="skillEdu">
+        <h1 class="heading">Languages</h1>
+        <h2 class="title">Language - Level</h2>
+      </div>
+      <div class="col-xs-12 col-md-6" id="skillEdu">
+        <h1 class="heading">Achievements</h1>
+        <h2 class="title">Event - Year - Achievement</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact col-xs-12">
+        <img width=100px class="img-responsive" src="{{url_for('static', filename='letter.png')}}" />
+        <h1 class=" title">Contact</h1>
+        <p class="subtitle">
+          Country <br />
+          ZIP, City<br />
+          Street #number<br />
+          <a href="tel:phone">PHONE</a><br />
+          <a target="_blank" href="https://twitter.com/handle">Twitter</a><br />
+          <a target="_blank" href="https://github.com/handle">GitHub</a><br />
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
