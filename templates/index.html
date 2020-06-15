@@ -11,7 +11,7 @@
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/style222.css') }}">
 </head>
 
 <body>
@@ -89,8 +89,7 @@
             <div class="card-custom-img" id="project2"></div>
             <a href="#" target="_blank" class="grow">
               <div class="card-custom-avatar">
-                <img class="img-fluid" src="https://roboticsandautomationnews.com/wp-content/uploads/2018/12/h20-ai.jpg"
-                  alt="Avatar" />
+                <img class="img-fluid" src="{{url_for('static', filename='h2o.png')}}" alt="Avatar" />
               </div>
             </a>
             <div class="card-body" style="overflow-y: auto">
@@ -98,7 +97,7 @@
               <p class="card-text">Train regression models to make solar energy (radiation) predictions.</p>
             </div>
             <div class="card-footer" style="background: inherit; border-color: inherit;">
-              <a href="#" class="btn btn-info">View Live</a>
+              <a href="https://github.com/juan-ivan-NV/kaggle_Solar_Energy_Prediction" class="btn btn-info">View Live</a>
               <button type="button" class="btn btn-outline-primary">Read More</button>
             </div>
           </div>
@@ -109,7 +108,7 @@
             <div class="card-custom-img" id="portfolio"></div>
             <a href="https://github.com/juan-ivan-NV/kaggle_Solar_Energy_Prediction">
               <div class="card-custom-avatar">
-                <img class="img-fluid" src="{{url_for('static', filename='Python_BI.png')}}" alt="Avatar" />
+                <img class="img-fluid" src="{{url_for('static', filename='Python_BI1.png')}}" alt="Avatar" />
               </div>
             </a>
             <div class="card-body" style="overflow-y: auto">
@@ -135,6 +134,17 @@
     <div class="container text-center">
       <span class="footer-text"></span>
     </div>
+      <div class="contact col-xs-12">
+        <img width=100px class="img-responsive" src="{{url_for('static', filename='letter.png')}}" />
+        <h1 class=" title">Contact</h1>
+        <p class="subtitle">
+          Mexico <br />
+          55745, Estado de Mexico<br />
+          juanivannb142@gmail.com <br />
+          <a target="_blank" href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/">linkedIn</a><br />
+          <a target="_blank" href="https://www.codewars.com/users/JI_NV">Codewars</a><br />
+          <a target="_blank" href="https://github.com/juan-ivan-NV?tab=repositories">GitHub</a><br />
+      </div>
   </footer>
 
   <!--Bootstrap JS-->

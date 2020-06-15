@@ -21,9 +21,10 @@
 
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
   #main {
-    background: url("https://www.alvolante.info/wp-content/uploads/Rimac-auto-el%C3%A9ctrico.jpg")
+    background: url("https://i.pinimg.com/originals/86/3f/e1/863fe14cb5aaaf1fb6c24d3620da6718.jpg")
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1))20%, url("https://i.pinimg.com/originals/86/3f/e1/863fe14cb5aaaf1fb6c24d3620da6718.jpg")*/
       no-repeat;
-    height: 768px;
+    height: 600px;
   }
   .nav-item,
   .navbar-nav {
@@ -160,13 +161,14 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #484848;
+  height: 10%; /* Set the fixed height of the footer here */
+  line-height: 10%; /* Vertically center the text there */
+  background-color: #16bff3;
 }
 
 .footer-text {
   color: white;
+  text-align: center;
 }
 
 /*Submit Button*/
@@ -319,15 +321,11 @@ body {
 }
 
 #project2 {
-  background: #fad961 linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  background: #21d4fd linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
 }
 
 #portfolio {
-  background-image: radial-gradient(
-    circle farthest-corner at 8.6% 21.8%,
-    rgba(231, 0, 0, 1) 0%,
-    rgba(122, 0, 0, 1) 90.1%
-  );
+  background: #21d4fd linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
 }
 
 #projectCards {
