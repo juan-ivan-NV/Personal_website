@@ -11,7 +11,8 @@
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/style222.css') }}">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/style44.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -35,14 +36,20 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <h1 id="name">Juan Ivan Nuñez Baeza</h1>
-    <h2 class="line-1 anim-typewriter">let's work together...</h2>
+    <div class="flex">
+      <div class="section-me">
+        <h1 id="name">Juan Ivan Nuñez Baeza</h1>
+        <h2 class="line-1 anim-typewriter">let's work together...</h2>
+      </div>
+      <!--img class="img-me" src="img/me.png" alt="me"-->
+      <img class="img-me" src="{{url_for('static', filename='logoi.png')}}" alt="me" />  
+    </div>
   </div>
   <div id="about">
     <div class="container">
@@ -77,9 +84,8 @@
                 object taken by the user.</p>
             </div>
             <div class="card-footer" style="background: inherit; border-color: inherit;">
-              <a href="https://saurabhkanswal.github.io/global-medical-database/" class="btn btn-info"
-                target="_blank">View Live</a>
-              <a href="#" class="btn btn-outline-primary">Read More</a>
+              <a href="https://github.com/juan-ivan-NV/face_payment_system/blob/master/demogif.gif" class="btn btn-info" target="_blank">View Live</a>
+              <a href="https://github.com/juan-ivan-NV/face_payment_system" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -97,8 +103,8 @@
               <p class="card-text">Train regression models to make solar energy (radiation) predictions.</p>
             </div>
             <div class="card-footer" style="background: inherit; border-color: inherit;">
-              <a href="https://github.com/juan-ivan-NV/kaggle_Solar_Energy_Prediction" class="btn btn-info">View Live</a>
-              <button type="button" class="btn btn-outline-primary">Read More</button>
+              <a href="https://www.kaggle.com/c/solar-energy-prediction-datamex0320/leaderboard" class="btn btn-info">View Live</a>
+              <a href="https://github.com/juan-ivan-NV/kaggle_Solar_Energy_Prediction" class="btn btn-outline-primary">Read More</a>
             </div>
           </div>
         </div>
@@ -117,7 +123,9 @@
             </div>
             <div class="card-footer" style="background: inherit; border-color: inherit;">
               <a href="https://juan-ivan-nv.github.io/Python_Business_Intelligence/" class="btn btn-info">View Live</a>
-              <button type="button" class="btn btn-outline-primary">Read More</button>
+              <a href="https://github.com/juan-ivan-NV/Python_Business_Intelligence" class="btn btn-outline-primary">Read More</a>
+              
+
             </div>
           </div>
         </div>
@@ -125,26 +133,24 @@
     </div>
   </div>
 
-  <!--Contact Section - I used php to get this working with my server-->
-
-
-
   <!--Very Basic footer section - Adding Social Media links here would be ideal-->
-  <footer class="footer">
-    <div class="container text-center">
-      <span class="footer-text"></span>
+  <footer class="footer-distributed" id="footer">
+
+    <div class="footer-right">
+
+      <a href="https://www.facebook.com/juanivan.nunezbaeza"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/juan-ivan-NV"><i class="fa fa-github"></i></a>
+
+      <a href="https://www.codewars.com/users/JI_NV"><img class="codew"
+          src="https://www.codewars.com/assets/logos/logo-square-red-big-c74ae0e7a89b33acd3beb1f08229630391934650e3bbd30ddc40e8be5bbfc71e.png"></a>
+
     </div>
-      <div class="contact col-xs-12">
-        <img width=100px class="img-responsive" src="{{url_for('static', filename='letter.png')}}" />
-        <h1 class=" title">Contact</h1>
-        <p class="subtitle">
-          Mexico <br />
-          55745, Estado de Mexico<br />
-          juanivannb142@gmail.com <br />
-          <a target="_blank" href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/">linkedIn</a><br />
-          <a target="_blank" href="https://www.codewars.com/users/JI_NV">Codewars</a><br />
-          <a target="_blank" href="https://github.com/juan-ivan-NV?tab=repositories">GitHub</a><br />
-      </div>
+
+    <div class="footer-left">
+      <p>The best of the best &copy; 2020</p>
+    </div>
+
   </footer>
 
   <!--Bootstrap JS-->
@@ -161,102 +167,3 @@
 
 </html>
 
-
-<!--<!DOCTYPE html>
-<html>
-<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
-
-<head>
-</head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12" id="resHead">
-        <h1>Juan Ivan Nuñez Baeza</h1>
-        <h3 class="name"> Data Analyst  ||  Automotive Engineer Intern </h3>
-        <img width=150px class="img-responsive" src="{{url_for('static', filename='logoi.png')}}" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-6" id="workExp">
-        <h1 class="heading">About me</h1>
-        <p>
-          Hey there, my name is Ivan and I'm a data analyst with background on automotive engineering, formed at the IPN
-          and Ironhack,
-          where I've been developing different scripts related to the correct treatment of big amounts of data to get
-          the best insights as possible
-          and bring desitions closer to reality or what could be. Personally, I´m very interested in data science,
-          machine learning,
-          and computer vision, because by implementing its different models or techniques in different areas would help
-          us to detect certain needs
-          and then satisfy it efficiently with few resources, saving time, giving accuracy, or less error.
-        </p>
-
-        <h1 class="heading">Work Experience</h1>
-        <h2 class="title">ZF</h2>
-        <h3 class="subtitle">Engineering intern</h3>
-        <h4 class="date">From: 06-2018 - To: 01-2019 </h4>
-        <p>
-          Description:
-          I have had the opportunity to appreciate and help during the operations starting with this new
-          manufacturing automotive factory by making engineering migration and development to install machines,
-          also making tests and getting all ready to launch the different production lines with the best OEE as
-          possible.
-        </p>
-        <p>
-          Responsibilities:
-          Toolroom management and administration to supply all the lines with enough tools to avoid dead times.
-          Tool life evaluation and testings in collaboration with suppliers to get the best performance as possible with
-          different machine parameters or tool modifications.
-          Tooling inventories administration for all the lines.
-          Creation and modification of programs to give a correct preset to the tools.
-        </p>
-
-      </div>
-      <div class="col-xs-12 col-md-6" id="skillEdu">
-        <h1 class="heading">Skillset</h1>
-
-        <h2 class="title">Programming</h2>
-        <p>
-          Python, OpenCV, MongoDB, MySQL, Bash, NLP understanding, Maths, H2O.ai Aquarium, Keras, Databases.
-        </p>
-        <h1 class="heading">Education</h1>
-        <h2 class="title">Ironhack</h2>
-        <h4 class="date">From: 03-2020 - To: 05-2020 </h4>
-        <h3 class="subtitle">Bootcamp data analytics</h3>
-        <h2 class="title">Instituto Politécnico Nacional</h2>
-        <h4 class="date">From: 06-2014 - To: 01-2019 </h4>
-        <h3 class="subtitle">Automotive systems engineering</h3>
-
-      </div>
-      <div class="col-xs-12 col-md-6" id="skillEdu">
-        <h1 class="heading">Languages</h1>
-        <h2 class="title">English - TOEIC 590</h2>
-      </div>
-      <div class="col-xs-12 col-md-6" id="skillEdu">
-        <h1 class="heading">Projects</h1>
-        <h2 class="title">Computer Vision - Regression Models - Business Intelligence</h2>
-      </div>
-      
-    </div>
-
-    <div class="row">
-      <div class="contact col-xs-12">
-        <img width=100px class="img-responsive" src="{{url_for('static', filename='letter.png')}}" />
-        <h1 class=" title">Contact</h1>
-        <p class="subtitle">
-          Mexico <br />
-          55745, Estado de Mexico<br />
-          juanivannb142@gmail.com <br />
-          <a href="tel:phone">+(52)5538184717</a><br />
-          <a target="_blank" href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/">linkedIn</a><br />
-          <a target="_blank" href="https://www.codewars.com/users/JI_NV">Codewars</a><br />
-          <a target="_blank" href="https://github.com/juan-ivan-NV?tab=repositories">GitHub</a><br />
-      </div>
-    </div>
-  </div>
-
-</body>
-
-</html>-->
