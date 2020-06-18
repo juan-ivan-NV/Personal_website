@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Title-->
+  <title>Example Portfolio</title>
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!--Main/First Section-->
+  <div id="main">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="flex">
+      <div class="section-me">
+        <h1 id="name">Juan Ivan Nuñez Baeza</h1>
+        <h2 class="line-1 anim-typewriter">let's work together...</h2>
+      </div>
+      <img class="img-me" src="img/me.png" alt="me">
+        
+      </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <h1 class="text-center aboutHeading">About Me</h1>
+      <p class="aboutPG text-center">Hey there, my name is Ivan and I'm a data analyst with background on automotive
+        engineering, formed at the IPN and Ironhack, where I've been developing different scripts related to the
+        correct treatment of big amounts of data to get the best insights as possible and bring desitions closer to
+        reality or what could be. Personally, I´m very interested in data science, machine learning, and computer
+        vision,
+        because by implementing its different models or techniques in different areas would help us to detect certain
+        needs and then satisfy it efficiently with few resources, saving time, giving accuracy, or less error. </p>
+    </div>
+  </div>
+  <!--Projects Section - Add your websites to the cards - You can add more as a Bootstrap Deck-->
+  <div id="projects">
+    <div class="container">
+      <h1 class="text-center aboutHeading">Projects</h1>
+      <div class="row pt-5 m-auto" id="projectCards">
+        <div class="col-md-6 col-lg-4 pb-3">
+          <div class="card card-custom bg-white border-white border-0">
+            <!--Enter Project Logo/Favicon here-->
+            <div class="card-custom-img" id="project1"></div>
+            <a href="#" target="_blank" class="grow">
+              <div class="card-custom-avatar">
+                <img class="img-fluid" src="https://broentech.no/wp-content/uploads/2017/08/eye-1024x808.jpg"
+                  alt="Avatar" />
+              </div>
+            </a>
+            <div class="card-body" style="overflow-y: auto">
+              <h4 class="card-title">Computer vision</h4>
+              <p class="card-text">Face recognition to detect identities and object recognition to detect prices per
+                object taken by the user.</p>
+            </div>
+            <div class="card-footer" style="background: inherit; border-color: inherit;">
+              <a href="https://saurabhkanswal.github.io/global-medical-database/" class="btn btn-info"
+                target="_blank">View Live</a>
+              <a href="#" class="btn btn-outline-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 pb-3">
+          <div class="card card-custom bg-white border-white border-0">
+            <!--Enter Project Logo/Favicon here-->
+            <div class="card-custom-img" id="project2"></div>
+            <a href="#" target="_blank" class="grow">
+              <div class="card-custom-avatar">
+                <img class="img-fluid" src="img/sol.png" alt="Avatar" />
+              </div>
+            </a>
+            <div class="card-body" style="overflow-y: auto">
+              <h4 class="card-title">Kaggle competition</h4>
+              <p class="card-text">Train regression models to make solar energy (radiation) predictions.</p>
+            </div>
+            <div class="card-footer" style="background: inherit; border-color: inherit;">
+              <a href="https://github.com/juan-ivan-NV/kaggle_Solar_Energy_Prediction" class="btn btn-info">View
+                Live</a>
+              <button type="button" class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 pb-3">
+          <div class="card card-custom bg-white border-white border-0">
+            <!--Enter Project Logo/Favicon here-->
+            <div class="card-custom-img" id="portfolio"></div>
+            <a href="https://github.com/juan-ivan-NV/kaggle_Solar_Energy_Prediction">
+              <div class="card-custom-avatar">
+                <img class="img-fluid" src="img/address.png" alt="Avatar" />
+              </div>
+            </a>
+            <div class="card-body" style="overflow-y: auto">
+              <h4 class="card-title">Business Intelligence</h4>
+              <p class="card-text">Identify the best place to locate a company based to a database of locations.</p>
+            </div>
+            <div class="card-footer" style="background: inherit; border-color: inherit;">
+              <a href="https://juan-ivan-nv.github.io/Python_Business_Intelligence/" class="btn btn-info">View Live</a>
+              <button type="button" class="btn btn-outline-primary">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Contact Section - I used php to get this working with my server-->
+
+
+
+  <!--Very Basic footer section - Adding Social Media links here would be ideal-->
+  <footer class="footer-distributed" id="footer">
+
+    <div class="footer-right">
+
+      <a href="https://www.facebook.com/juanivan.nunezbaeza"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/juan-ivan-NV"><i class="fa fa-github"></i></a>
+
+      <a href="https://www.codewars.com/users/JI_NV"><img class="codew"
+          src="https://www.codewars.com/assets/logos/logo-square-red-big-c74ae0e7a89b33acd3beb1f08229630391934650e3bbd30ddc40e8be5bbfc71e.png"></a>
+
+    </div>
+
+    <div class="footer-left">
+      <p>The best of the best &copy; 2020</p>
+    </div>
+
+  </footer>
+
+
+  <!--Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+<!--<!DOCTYPE html>
+<html>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+
+<head>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12" id="resHead">
+        <h1>Juan Ivan Nuñez Baeza</h1>
+        <h3 class="name"> Data Analyst  ||  Automotive Engineer Intern </h3>
+        <img width=150px class="img-responsive" src="{{url_for('static', filename='logoi.png')}}" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6" id="workExp">
+        <h1 class="heading">About me</h1>
+        <p>
+          Hey there, my name is Ivan and I'm a data analyst with background on automotive engineering, formed at the IPN
+          and Ironhack,
+          where I've been developing different scripts related to the correct treatment of big amounts of data to get
+          the best insights as possible
+          and bring desitions closer to reality or what could be. Personally, I´m very interested in data science,
+          machine learning,
+          and computer vision, because by implementing its different models or techniques in different areas would help
+          us to detect certain needs
+          and then satisfy it efficiently with few resources, saving time, giving accuracy, or less error.
+        </p>
+
+        <h1 class="heading">Work Experience</h1>
+        <h2 class="title">ZF</h2>
+        <h3 class="subtitle">Engineering intern</h3>
+        <h4 class="date">From: 06-2018 - To: 01-2019 </h4>
+        <p>
+          Description:
+          I have had the opportunity to appreciate and help during the operations starting with this new
+          manufacturing automotive factory by making engineering migration and development to install machines,
+          also making tests and getting all ready to launch the different production lines with the best OEE as
+          possible.
+        </p>
+        <p>
+          Responsibilities:
+          Toolroom management and administration to supply all the lines with enough tools to avoid dead times.
+          Tool life evaluation and testings in collaboration with suppliers to get the best performance as possible with
+          different machine parameters or tool modifications.
+          Tooling inventories administration for all the lines.
+          Creation and modification of programs to give a correct preset to the tools.
+        </p>
+
+      </div>
+      <div class="col-xs-12 col-md-6" id="skillEdu">
+        <h1 class="heading">Skillset</h1>
+
+        <h2 class="title">Programming</h2>
+        <p>
+          Python, OpenCV, MongoDB, MySQL, Bash, NLP understanding, Maths, H2O.ai Aquarium, Keras, Databases.
+        </p>
+        <h1 class="heading">Education</h1>
+        <h2 class="title">Ironhack</h2>
+        <h4 class="date">From: 03-2020 - To: 05-2020 </h4>
+        <h3 class="subtitle">Bootcamp data analytics</h3>
+        <h2 class="title">Instituto Politécnico Nacional</h2>
+        <h4 class="date">From: 06-2014 - To: 01-2019 </h4>
+        <h3 class="subtitle">Automotive systems engineering</h3>
+
+      </div>
+      <div class="col-xs-12 col-md-6" id="skillEdu">
+        <h1 class="heading">Languages</h1>
+        <h2 class="title">English - TOEIC 590</h2>
+      </div>
+      <div class="col-xs-12 col-md-6" id="skillEdu">
+        <h1 class="heading">Projects</h1>
+        <h2 class="title">Computer Vision - Regression Models - Business Intelligence</h2>
+      </div>
+      
+    </div>
+
+    <div class="row">
+      <div class="contact col-xs-12">
+        <img width=100px class="img-responsive" src="{{url_for('static', filename='letter.png')}}" />
+        <h1 class=" title">Contact</h1>
+        <p class="subtitle">
+          Mexico <br />
+          55745, Estado de Mexico<br />
+          juanivannb142@gmail.com <br />
+          <a href="tel:phone">+(52)5538184717</a><br />
+          <a target="_blank" href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/">linkedIn</a><br />
+          <a target="_blank" href="https://www.codewars.com/users/JI_NV">Codewars</a><br />
+          <a target="_blank" href="https://github.com/juan-ivan-NV?tab=repositories">GitHub</a><br />
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>-->
