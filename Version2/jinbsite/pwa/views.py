@@ -6,9 +6,6 @@ def home(request):
 
     return render(request,"pwa/home.html")
 
-def projects(request):
-
-    return render(request,"pwa/projects.html")
 
 def resources(request):
 
