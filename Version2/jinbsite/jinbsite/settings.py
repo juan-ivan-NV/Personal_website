@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'pwa',
     'projects',
     'resources',
+    'contact',
 ]
 
 MIDDLEWARE = [

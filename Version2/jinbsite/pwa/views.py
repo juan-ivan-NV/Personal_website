@@ -6,6 +6,3 @@ def home(request):
 
     return render(request,"pwa/home.html")
 
-def contact(request):
-
-    return render(request,"pwa/contact.html")
