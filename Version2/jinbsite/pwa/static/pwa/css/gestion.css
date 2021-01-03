@@ -155,7 +155,10 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #43d4e98f;
+  /*background-color: #43d4e98f;*/
+  background: url(https://thumbs.gfycat.com/TenderRealisticHoneybadger-size_restricted.gif);
+  background-position: center;
+  background-size: cover;
 }
 
 .cta .cta-inner {
