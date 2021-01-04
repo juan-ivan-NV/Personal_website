@@ -19,7 +19,8 @@ class Category(models.Model):
 class Post(models.Model):
 
     title = models.CharField(max_length=50) 
-    content = models.CharField(max_length=50)
+    content = models.CharField(max_length=200)
+    link = models.URLField(max_length=200, blank=True)
     image = models.ImageField(upload_to='resources' , null=True, blank=True)
     autor = models.ForeignKey(User, on_delete=models.CASCADE) # to delete all publications that certain ID has made
     categories=models.ManyToManyField(Category)
