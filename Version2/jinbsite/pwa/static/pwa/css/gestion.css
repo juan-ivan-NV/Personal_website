@@ -301,114 +301,85 @@ ul.errorlist{
 
 /* Testing fonts */
 
-@import url(https://fonts.googleapis.com/css?family=Orbitron);
-
-body {
-  background-color:#111;
-  font-family: 'Orbitron', courier, sans-serif;
+.app {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  z-index: 1;
+  
 }
 
-p {
-  margin-top:3em;
-  font-size:2em;
-}
-
-h1 {font-size:5em;}
-a {
-  text-decoration:none;
-  color:rgba(255,255,255,.3); // Fallback for Clipping the anchor text on nonWebkit browsers
-}
-
-.glow {
-  text-align:center;
-  color:rgba(255,255,255,.3); 
-  text-shadow: 0 0 1px rgba(157,208,154,.3); // Fallback for nonCSS3?
-  /* Stripes */
-  /*Fallback:
-http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
-*/
-  background: -webkit-linear-gradient(transparent, transparent), url(https://i.imgur.com/WyMyxQ6.png) repeat;
-  /* clipping webkit magic */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* Animation */
-  -webkit-animation: glow 3s infinite alternate;
-     -moz-animation: glow 3s infinite alternate;
-          animation: glow 3s infinite alternate;
-  -webkit-animation-timing-function: cubic-bezier(1,.3,.79,.81);
-     -moz-animation-timing-function: cubic-bezier(1,.3,.79,.81);
-          animation-timing-function: cubic-bezier(1,.3,.79,.81);
-}
-
-@-webkit-keyframes glow {
+@keyframes scan {
   0% {
-    text-shadow: 0 0 1px rgba(255,255,255,.1),
-                 0 0 3px rgba(255,255,255,.1),
-                 0 0 5px rgba(157,208,154,.3);
+      background-position: 0 -100vh;
   }
-  50% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1);
-  }
-  52% {
-    text-shadow: 0 0 5px rgba(157,208,154,.3);
-  }
-  54% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1);
-  }
+  35%,
   100% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1),
-                 0 0 10px rgba(157,208,154,.3);
+      background-position: 0 100vh;
   }
 }
 
-@-moz-keyframes glow {
-  0% {
-    text-shadow: 0 0 1px rgba(255,255,255,.1),
-                 0 0 3px rgba(255,255,255,.1),
-                 0 0 5px rgba(157,208,154,.3);
-  }
+x-sign {
+  --interval: 2s;
+  display: block;
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4), 6px 2px 4px rgba(195, 154, 63, 0.48), 10px 6px 0px rgba(83, 47, 0, 0.78);
+  will-change: filter, color;
+  filter: saturate(80%);
+  color: #f7f69e;
+  --color1: #17b8b6f0;
+  --color2: #0098ff;
+  --color3: #002eff;
+  --color4: #2e008b;
+}
+
+.glitch {
+  margin: auto;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+.xl-info {
+  font-size: 1.04rem;
+  font-weight: 400;
+  padding-left: 0.02rem;
+}
+
+.sm-info {
+  font-size: 0.44rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+@keyframes flicker {
   50% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1);
-  }
-  52% {
-    text-shadow: 0 0 5px rgba(157,208,154,.3);
-  }
-  54% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1);
-  }
-  100% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1),
-                 0 0 10px rgba(157,208,154,.3);
+      color: white;
+      filter: saturate(200%) hue-rotate(20deg);
   }
 }
 
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 1px rgba(255,255,255,.1),
-                 0 0 3px rgba(255,255,255,.1),
-                 0 0 5px rgba(157,208,154,.3);
-  }
-  50% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1);
-  }
-  52% {
-    text-shadow: 0 0 5px rgba(157,208,154,.3);
-  }
-  54% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1);
-  }
-  100% {
-    text-shadow: 0 0 2px rgba(255,255,255,.1),
-                 0 0 5px rgba(255,255,255,.1),
-                 0 0 10px rgba(157,208,154,.3);
-  }
+.__city {
+  margin-bottom: 0.022rem !important;
+  font-weight: 900;
+  font-size: 150%;
+}
+
+.__info {
+  margin-top: 0;
+  margin-bottom: 0.012rem;
+  font-weight: 400;
+  font-size: 2.278rem;
+}
+
+.__state {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  font-weight: 400;
+  font-size: 0.95rem;
+  border: 2px solid;
+  padding: 3px;
+  box-shadow: 0 4px 8px 0 rgba(228, 224, 3, 0.2), 0 6px 20px 0 rgba(252, 248, 23, 0.19);
 }
 
