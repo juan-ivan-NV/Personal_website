@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 
 def contact(request):
 
-    '''if request.method =="POST":
+    if request.method =="POST":
 
         myForm = ContactForm(request.POST)
 
@@ -13,12 +13,12 @@ def contact(request):
             
             infForm=myForm.cleaned_data
 
-            send_mail(infForm['Name'], infForm['Content'], infForm.get('Email',''), ['coldcram14@hotmail.com'],)
+            send_mail(infForm['name'], infForm['content'], infForm.get('email',''), ['coldcram14@hotmail.com'],)
 
-            return render(request, 'contact.html')
+            return render(request, 'contact/thanks.html')
 
-    else:''' 
+    else:
 
-    myForm = ContactForm()
+        myForm = ContactForm()
 
     return render(request, 'contact/contact.html', {'form': myForm})
