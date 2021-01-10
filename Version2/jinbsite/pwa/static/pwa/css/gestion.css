@@ -62,7 +62,7 @@ p {
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
@@ -134,9 +134,16 @@ p {
     left: 600;
     width: 60%;
     margin-top: 1rem;
-    background-color: rgb(0 103 185 / 68%);
-    color: cornsilk;
+    border: 30px solid #06b9ee;
+    border-right: 5px solid #06b9ee;
+    border-left: 5px solid #06b9ee;
+    border-bottom: 24px solid #06b9ee;
+    clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) 100%, 80px calc(100% - 0px), 65px calc(100% - 15px), 0% calc(100% - 15px));
+    background-color: rgba(139, 0, 185, 0.22);
+    font-size: 1.2rem;
+    color: white;
     position: absolute;
+}
   }
   .intro .intro-text .intro-button {
     width: 100%;
@@ -148,17 +155,17 @@ p {
 
 @media (min-width: 1200px) {
   .intro .intro-text {
-    width: 45%;
+    width: 55%;
   }
 }
 
 .cta {
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   /*background-color: #43d4e98f;*/
   background: url(https://thumbs.gfycat.com/TenderRealisticHoneybadger-size_restricted.gif);
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 }
 
 .cta .cta-inner {
