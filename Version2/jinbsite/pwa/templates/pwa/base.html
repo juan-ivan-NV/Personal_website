@@ -39,10 +39,10 @@
           <li class="nav-item {% if request.path == '/' %} active  {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Home' %}">Home</a>
           </li>
-          <li class="nav-item {% if request.path == '/projects' %} active  {% endif %} px-lg-4">
+          <li class="nav-item {% if request.path == '/projects/' %} active  {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Projects' %}">Projects</a>
           </li>
-          <li class="nav-item {% if request.path == '/resources' %} active  {% endif %} px-lg-4">
+          <li class="nav-item {% if request.path == '/resources/' %} active  {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Resources' %}">Resources</a>
           </li>
           <li class="nav-item {% if request.path == '/contact/' %} active  {% endif %} px-lg-4">
@@ -84,11 +84,11 @@
 	          </span>
 	        </a>
 	    </p>
-        <p class="m-0 mbt">
-        	<a href="sample.html" class="link">...</a> ·
-        	<a href="sample.html" class="link">...</a> ·
-        	<a href="sample.html" class="link">...</a>
-		</p>
+        <div class="m-0 mbt">
+        	<a class="footerbtn" href="https://www.linkedin.com/in/juan-ivan-nu%C3%B1ez-baeza-3b7019a7/" target='_blank'><i class="fa fa-lg fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a> 
+        	<a class="footerbtn" href="https://github.com/juan-ivan-NV" target='_blank'><i class="fa fa-github" aria-hidden="true"></i> Github</a> 
+        	<a class="footerbtn" href="https://www.codewars.com/users/JI_NV" target='_blank'><i class="fa fa-github" aria-hidden="true"></i> Codewars</a> 
+		</div>
         <p class="m-0 mbt1">&copy; ...</p>
       </div>
 	</footer>
