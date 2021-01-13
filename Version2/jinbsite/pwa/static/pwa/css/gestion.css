@@ -250,7 +250,7 @@ p {
 }
 
 .footer {
-   background-color: #000000a1;
+   background-color: #1e0023a1;
 }
 
 
@@ -307,15 +307,18 @@ ul.errorlist{
 
 
 .containerForm{
-  background-color: rgb(0 103 185 / 68%);
-  width: 50%;
+  background: linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)), url(https://steamuserimages-a.akamaihd.net/ugc/948464026876143240/25779DE7199E398CE52CF68C3B37D10052E2050D/);
+  background-position: center;
+  background-size: auto;
+  width: 45%;
   margin: 3% auto;
   border-radius: .25rem;
-  padding: 0.5% 0px;
+  padding: 1.5% 0px;
 }
 
 .footerbtn {
-  background-color: black;
+  background-color: #100010a1;
   font-family: 'Orbitron', sans-serif;;
   font-size: 20px;
   transition: width ease .5s;
