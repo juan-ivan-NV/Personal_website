@@ -12,7 +12,12 @@
 
     <form action="" method="POST" style="text-align: center;">{% csrf_token %}
         <div class="containerForm">
-        <table style="color: white; margin:20px auto;">{{form.as_table}}</table>
+            <table>
+            {% for field in form %}
+                <tr><td class="rowsform">{{field}}</td></tr>
+            {% endfor %}
+            </table>
+        <!-- <table style="color: white; margin:20px auto;">{{form.as_table}}</table> -->
         <input type="submit" value="Send" style="width: 150px; background-color: #00dcffad; color: white;">
         </div>
         

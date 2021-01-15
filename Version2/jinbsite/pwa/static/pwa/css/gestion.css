@@ -317,6 +317,14 @@ ul.errorlist{
   padding: 1.5% 0px;
 }
 
+.rowsform{
+  color: white; 
+  margin: auto;
+  background: aqua;
+  text-align: center;
+}
+
+
 .footerbtn {
   background-color: #100010a1;
   font-family: 'Orbitron', sans-serif;;
