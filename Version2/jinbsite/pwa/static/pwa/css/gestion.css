@@ -317,12 +317,24 @@ ul.errorlist{
   padding: 1.5% 0px;
 }
 
-.rowsform{
-  color: white; 
-  margin: auto;
-  background: aqua;
-  text-align: center;
+#id_content{
+    overflow: auto;
+    resize: vertical;
+    background-color: #00ffff70;
 }
+#id_email{
+    width: 100% !important;
+    overflow: auto;
+    resize: vertical;
+    background-color: #00ffff70;
+}
+#id_name{
+    width: 100% !important;
+    overflow: auto;
+    resize: vertical;
+    background-color: #00ffff70;
+}
+
 
 
 .footerbtn {
