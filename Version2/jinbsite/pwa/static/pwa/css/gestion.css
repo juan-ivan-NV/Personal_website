@@ -321,21 +321,25 @@ ul.errorlist{
     overflow: auto;
     resize: vertical;
     background-color: #00ffff70;
+    border-radius: 6px;
+    color: white;
 }
 #id_email{
     width: 100% !important;
     overflow: auto;
     resize: vertical;
     background-color: #00ffff70;
+    border-radius: 6px;
+    color: white;
 }
 #id_name{
     width: 100% !important;
     overflow: auto;
     resize: vertical;
     background-color: #00ffff70;
+    border-radius: 6px;
+    color: white;
 }
-
-
 
 .footerbtn {
   background-color: #100010a1;
@@ -352,10 +356,12 @@ ul.errorlist{
   color: rgba(21, 171, 195, 1.0);
   margin: 0 5px;
 }
+
 .footerbtn:hover {
   background-color: #FFF;
   color: blue;
   color: rgba(21, 171, 195, 1.0);
+  cursor: pointer;
 }
 
 
