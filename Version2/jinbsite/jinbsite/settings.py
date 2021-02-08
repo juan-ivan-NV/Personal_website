@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE' : 'django.db.backends.postgresql_psycopg2',
         'NAME' : 'jinbsite_db',
         'USER' : 'postgres',
-        'PASSWORD' : 'xxxxxxxx',
+        'PASSWORD' : 'xxxxxxx',
         'HOST' : '127.0.0.1',
         'DATABASE_PORT' : '5432',
     }
